@@ -1,0 +1,14 @@
+Amélioration possible :
+	- Ajout d'un aline "bonus".
+	- Ajout d'un Easter Egg.
+	- Mettre de la transparence sur nos images (vaisseau, aliens).
+	- Avoir un menu d'options pour changer les touches du clavier.
+
+
+Problèmes majeurs rencontré :
+	- Pour les images il faut mettre la variable qui contient l'image depuis le ficher en global pour pouvoir l'afficher.
+	- La gestion de la "clock" sur Tkinter n'est pas très bien developpé avec le "after", beaucoup de fonctionnalité manquante comparé à pygame 
+donc on doit contourné en créant des fonctions, (notamment pour un compteur, ou des erreurs qui surviennent selon des différentiels de coup de clock qui se chevauchent entre les fonctions
+: les "if not ... \n return").
+	- le passage de rectanges de couleurs à des vraies images car l'appel des coordonnées ne sont plus les mêmes ("coord = Canevas.coords(Vaisseau)[3]" devient "coord = Canevas.coords(Vaisseau)[1]+'moitié de la hauteur de l'image'")
+, de plus les collisions ne sont plus les mêmes à cause de ces coordonnées.
