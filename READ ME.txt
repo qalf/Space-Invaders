@@ -12,3 +12,7 @@ donc on doit contourné en créant des fonctions, (notamment pour un compteur, o
 : les "if not ... \n return").
 	- le passage de rectanges de couleurs à des vraies images car l'appel des coordonnées ne sont plus les mêmes ("coord = Canevas.coords(Vaisseau)[3]" devient "coord = Canevas.coords(Vaisseau)[1]+'moitié de la hauteur de l'image'")
 , de plus les collisions ne sont plus les mêmes à cause de ces coordonnées.
+
+
+
+https://github.com/qalf/Space-Invaders
